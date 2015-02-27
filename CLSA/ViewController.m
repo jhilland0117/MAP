@@ -57,6 +57,7 @@ CLLocationManager *_locationAuthorizationManager;
     [super viewDidLoad];
     self.theImageView.image = self.theImage;
     
+    
 
     
     // get the coordinates passed during segue from list
@@ -75,7 +76,7 @@ CLLocationManager *_locationAuthorizationManager;
         mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
         mapView_.settings.indoorPicker = YES;
         mapView_.indoorEnabled = YES;
-        mapView_.indoorDisplay.delegate = self;
+        //mapView_.indoorDisplay.delegate = self;
         mapView_.settings.compassButton = YES;
         mapView_.settings.myLocationButton = YES;
         mapView_.myLocationEnabled = YES;

@@ -49,8 +49,6 @@
     cell.textLabel.text = _names[indexPath.row];
     
     // fill cell detail with building num
-    
-    cell.detailTextLabel.text = _nums[indexPath.row];
     //cell.detailTextLabel.text = _longit[indexPath.row];
     //cell.detailTextLabel.text = _lati[indexPath.row];
     //cell.detailTextLabel.numberOfLines = 3;
@@ -75,35 +73,22 @@
     
     // parse the data based off of "," character
     _lines = [str componentsSeparatedByString:@","];
-    
-    /* //this will be used if we have \n in file
-     for (NSString *line in lines) {
-     buildings = [line componentsSeparatedByString:@","];
-     //bNumbers = [line componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
-     
-     }
-     NSLog(@"%@", buildings); */
-    //NSLog(@"%@", lines);
-    
+
     // allocate space for these individ arrays
+    
     _names = [[NSMutableArray alloc] init];
-    _nums = [[NSMutableArray alloc] init];
     _longit = [[NSMutableArray alloc] init];
     _lati = [[NSMutableArray alloc] init];
     
     //NSUInteger *elements = [lines count]; // size is 1213
     //NSLog(@"%lu", elements);
+    
     int j = 0, k = 0, l = 0, m = 0;
-    for (int i = 0; i < 1210; i += 4) {
+    for (int i = 0; i < 66; i += 3) {
         _names[j++] = _lines[i];
-        _nums[k++] = _lines[i + 1];
-        _longit[l++] = _lines[i + 2];
-        _lati[m++] = _lines[i + 3];
+        _longit[l++] = _lines[i + 1];
+        _lati[m++] = _lines[i + 2];
     }
-    //NSLog(@"%@", names);
-    //NSLog(@"%@", nums);
-    //NSLog(@"%@", longit);
-    //NSLog(@"%@", lati);
     
 }
 
@@ -111,8 +96,6 @@
     [super viewDidLoad];
     [self parseAbqBuildings];
     
-    // initialize filteredArray for searches
-    //self.filteredArray = [NSMutableArray arrayWithCapacity:[_lines count]];
     
 }
 
@@ -123,7 +106,8 @@
 
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.identifier isEqualToString:@"coordinates"]) {
+    
+    if([segue.identifier isEqualToString:@"placeCoordinates"]) {
         
         // our problem is that the navigation controller allows us to segue back to list
         // do we want this functionality? is it going to affect performance?
@@ -133,7 +117,6 @@
         svc.latitudeCoordinate = _lati[selectedRowIndex.row];
         svc.longitudeCoordinate = _longit[selectedRowIndex.row];
         svc.nameCoordinate = _names[selectedRowIndex.row];
-        svc.buildingNumber = _nums[selectedRowIndex.row];
         svc.coordinatesPassed = TRUE;
         
     }

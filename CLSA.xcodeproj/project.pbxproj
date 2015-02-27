@@ -11,7 +11,6 @@
 		213ED8221A73A3BF00C5F035 /* computerpods.txt in Resources */ = {isa = PBXBuildFile; fileRef = 213ED8211A73A3BF00C5F035 /* computerpods.txt */; };
 		213ED8241A73A42E00C5F035 /* dining.txt in Resources */ = {isa = PBXBuildFile; fileRef = 213ED8231A73A42E00C5F035 /* dining.txt */; };
 		213ED8261A73A45900C5F035 /* gyms.txt in Resources */ = {isa = PBXBuildFile; fileRef = 213ED8251A73A45900C5F035 /* gyms.txt */; };
-		213ED8281A73A49F00C5F035 /* placesofinterest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 213ED8271A73A49F00C5F035 /* placesofinterest.txt */; };
 		213ED82A1A73A4F200C5F035 /* unmshuttles.txt in Resources */ = {isa = PBXBuildFile; fileRef = 213ED8291A73A4F200C5F035 /* unmshuttles.txt */; };
 		213ED82C1A73A55A00C5F035 /* meteredparking.txt in Resources */ = {isa = PBXBuildFile; fileRef = 213ED82B1A73A55A00C5F035 /* meteredparking.txt */; };
 		215C7C0B1A5608B200F30547 /* CLSATests.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C7C0A1A5608B200F30547 /* CLSATests.m */; };
@@ -38,6 +37,7 @@
 		215C7C7D1A5620EA00F30547 /* LocationTypeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C7C7C1A5620EA00F30547 /* LocationTypeViewController.m */; };
 		215C7C801A56212A00F30547 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 215C7C7F1A56212A00F30547 /* LocationViewController.m */; };
 		215C7C881A5638F600F30547 /* displaymedia.aspx.png in Resources */ = {isa = PBXBuildFile; fileRef = 215C7C871A5638F500F30547 /* displaymedia.aspx.png */; };
+		218187081AA0473900A2F866 /* placesofinterest.txt in Resources */ = {isa = PBXBuildFile; fileRef = 218187071AA0473900A2F866 /* placesofinterest.txt */; };
 		21BEED4C1A5FBA130092C4C3 /* abqbuildings.txt in Resources */ = {isa = PBXBuildFile; fileRef = 21BEED4B1A5FBA130092C4C3 /* abqbuildings.txt */; };
 		21BEED571A609C9D0092C4C3 /* reveal-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 21BEED561A609C9D0092C4C3 /* reveal-icon.png */; };
 		21BEED5A1A60A7890092C4C3 /* UICollectionViewControllerMe.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BEED591A60A7890092C4C3 /* UICollectionViewControllerMe.m */; };
@@ -68,7 +68,6 @@
 		213ED8211A73A3BF00C5F035 /* computerpods.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = computerpods.txt; sourceTree = "<group>"; };
 		213ED8231A73A42E00C5F035 /* dining.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dining.txt; sourceTree = "<group>"; };
 		213ED8251A73A45900C5F035 /* gyms.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gyms.txt; sourceTree = "<group>"; };
-		213ED8271A73A49F00C5F035 /* placesofinterest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placesofinterest.txt; sourceTree = "<group>"; };
 		213ED8291A73A4F200C5F035 /* unmshuttles.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = unmshuttles.txt; sourceTree = "<group>"; };
 		213ED82B1A73A55A00C5F035 /* meteredparking.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = meteredparking.txt; sourceTree = "<group>"; };
 		215C7BEB1A5608B100F30547 /* CLSA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CLSA.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +101,7 @@
 		215C7C7E1A56212A00F30547 /* LocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		215C7C7F1A56212A00F30547 /* LocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		215C7C871A5638F500F30547 /* displaymedia.aspx.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = displaymedia.aspx.png; sourceTree = "<group>"; };
+		218187071AA0473900A2F866 /* placesofinterest.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = placesofinterest.txt; sourceTree = "<group>"; };
 		21BEED4B1A5FBA130092C4C3 /* abqbuildings.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = abqbuildings.txt; sourceTree = "<group>"; };
 		21BEED561A609C9D0092C4C3 /* reveal-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reveal-icon.png"; sourceTree = "<group>"; };
 		21BEED581A60A7890092C4C3 /* UICollectionViewControllerMe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionViewControllerMe.h; sourceTree = "<group>"; };
@@ -161,8 +161,8 @@
 				213ED8231A73A42E00C5F035 /* dining.txt */,
 				213ED8211A73A3BF00C5F035 /* computerpods.txt */,
 				213ED8291A73A4F200C5F035 /* unmshuttles.txt */,
+				218187071AA0473900A2F866 /* placesofinterest.txt */,
 				213ED82B1A73A55A00C5F035 /* meteredparking.txt */,
-				213ED8271A73A49F00C5F035 /* placesofinterest.txt */,
 				213ED8251A73A45900C5F035 /* gyms.txt */,
 				21BEED6E1A6136870092C4C3 /* paw.jpg */,
 				21BEED5D1A610F410092C4C3 /* News_icon.jpg */,
@@ -331,7 +331,6 @@
 				213ED8221A73A3BF00C5F035 /* computerpods.txt in Resources */,
 				21BEED5E1A610F410092C4C3 /* News_icon.jpg in Resources */,
 				215C7C881A5638F600F30547 /* displaymedia.aspx.png in Resources */,
-				213ED8281A73A49F00C5F035 /* placesofinterest.txt in Resources */,
 				215C7C771A561EF300F30547 /* Images.xcassets in Resources */,
 				213ED8201A73A37800C5F035 /* libraries.txt in Resources */,
 				21BEED6F1A6136870092C4C3 /* paw.jpg in Resources */,
@@ -346,6 +345,7 @@
 				21BEED571A609C9D0092C4C3 /* reveal-icon.png in Resources */,
 				213ED8261A73A45900C5F035 /* gyms.txt in Resources */,
 				21BEED6B1A6132480092C4C3 /* sizeUNMGraphic.jpg in Resources */,
+				218187081AA0473900A2F866 /* placesofinterest.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

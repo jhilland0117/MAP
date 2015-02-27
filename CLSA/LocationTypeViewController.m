@@ -18,6 +18,7 @@
 
 @implementation LocationTypeViewController
 
+
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 3;
 }
@@ -27,18 +28,21 @@
     if (indexPath.row == 0) {
         UITableViewCell *cell0 = [tableView dequeueReusableCellWithIdentifier:@"cellZero"];
         cell0.textLabel.text = @"Buildings";
+         //NSLog(@"%ld", (long)indexPath.row);
         return cell0;
     }
    
     else if (indexPath.row == 1) {
-        UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"cellOne"];
+        UITableViewCell *cell1 = [tableView dequeueReusableCellWithIdentifier:@"cellZero"];
         cell1.textLabel.text = @"Libraries";
+         //NSLog(@"%ld", (long)indexPath.row);
         return cell1;
     }
     
     else {
-        UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"cellTwo"];
+        UITableViewCell *cell2 = [tableView dequeueReusableCellWithIdentifier:@"cellZero"];
         cell2.textLabel.text = @"Places of Interest";
+         //NSLog(@"%ld", (long)indexPath.row);
         return cell2;
     }
     
@@ -50,43 +54,25 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+   // NSLog(@"Are we there at all?");
+    
     if (indexPath.row == 0) {
-        [self performSegueWithIdentifier:@"RowTouch" sender:self];
+        //NSLog(@"%ld", (long)indexPath.row);
+        [self performSegueWithIdentifier:@"buildings" sender:self];
     }
     
     else if (indexPath.row == 1) {
+        //NSLog(@"%ld", (long)indexPath.row);
         [self performSegueWithIdentifier:@"libraries" sender:self];
     }
     
     else {
+        //NSLog(@"%ld", (long)indexPath.row);
         [self performSegueWithIdentifier:@"placesOfInterest" sender:self];
     }
     
     
 }
-
-/*
--(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    if([segue.identifier isEqualToString:@"buildings"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        
-        
-        LocationViewController *controller = segue.destinationViewController;
-        
-    }
-    
-    else if ([segue.identifier isEqualToString:@"libraries"]) {
-        LibrariesViewController *controller = segue.destinationViewController;
-        
-    }
-    
-    else if ([segue.identifier isEqualToString:@"placesOfInterest"]) {
-        PlacesOfInterestViewController *controller = segue.destinationViewController;
-        
-    }
-    
-}*/
 
 
 @end

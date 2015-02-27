@@ -75,23 +75,12 @@
     // parse the data based off of "," character
     _lines = [str componentsSeparatedByString:@","];
     
-    /* //this will be used if we have \n in file
-     for (NSString *line in lines) {
-     buildings = [line componentsSeparatedByString:@","];
-     //bNumbers = [line componentsSeparatedByCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@","]];
-     
-     }
-     NSLog(@"%@", buildings); */
-    //NSLog(@"%@", lines);
-    
     // allocate space for these individ arrays
     _names = [[NSMutableArray alloc] init];
     _nums = [[NSMutableArray alloc] init];
     _longit = [[NSMutableArray alloc] init];
     _lati = [[NSMutableArray alloc] init];
     
-    //NSUInteger *elements = [lines count]; // size is 1213
-    //NSLog(@"%lu", elements);
     int j = 0, k = 0, l = 0, m = 0;
     for (int i = 0; i < 1210; i += 4) {
         _names[j++] = _lines[i];
@@ -99,10 +88,6 @@
         _longit[l++] = _lines[i + 2];
         _lati[m++] = _lines[i + 3];
     }
-    //NSLog(@"%@", names);
-    //NSLog(@"%@", nums);
-    //NSLog(@"%@", longit);
-    //NSLog(@"%@", lati);
     
 }
 
@@ -119,7 +104,7 @@
     [super didReceiveMemoryWarning];
     // dispose of any resources that can be recreated
 }
-
+/*
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if([segue.identifier isEqualToString:@"coordinates"]) {
@@ -136,6 +121,6 @@
         svc.coordinatesPassed = TRUE;
         
     }
-}
+}*/
 
 @end
